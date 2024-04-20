@@ -1,0 +1,11 @@
+{% for movie in movies %}
+{{movie.name}}<br>
+{{movie.director}}<br>
+{{movie.Hero}}<br>
+{{movie.Heroine}}<br>
+{{movie.release_year}}<br>
+{{movie.id}}
+<a href="/movie-update/{{movie.id}}/">Edit</a>
+<a href="/movie-detail/{{movie.id}}/">Detail</a>
+<a href="/delete-movie/{{movie.id}}/">Delete</a>
+{% endfor %}

@@ -1,0 +1,8 @@
+{% for student in students %}
+  {{student.name}}<br>
+  {{student.mobile}}<br>
+  {{student.id}}
+  <a href="/student-update/{{student.id}}/">Edit</a>
+  <a href="/student-detail/{{student.id}}/">Detail</a>
+  <br><br>
+{% endfor %}
